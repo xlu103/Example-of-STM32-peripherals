@@ -40,7 +40,7 @@ u16 Smog_Trans_Concentration(void)
 	u16 Rs;
 //	Rs = SMOG_PIN46_R*(4096.0/temp_val - 1);
 	Rs=(temp_val*100/4096);
-	printf("Smog_Rs_Val:%d\r\n", Rs);
+	// printf("Smog_Rs_Val:%d\r\n", Rs);
 	
 	ulVal = Rs;//这里填写公式根据Rs计算气体浓度
 	//OLED_ShowNum(48,0,ulVal,2,16);

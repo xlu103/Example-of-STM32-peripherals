@@ -36,7 +36,7 @@ static  u8 DHT11_Check(void)
 	return 0;
 }
 //从DHT11读取一个位
-//返回值：1/0
+//返回值:1/0
 static  u8 DHT11_Read_Bit(void) 			 
 {
  	u8 retry=0;
@@ -57,7 +57,7 @@ static  u8 DHT11_Read_Bit(void)
 }
 
 //从DHT11读取一个字节
-//返回值：读到的数据
+//返回值:读到的数据
 static  u8 DHT11_Read_Byte(void)    
 {        
     u8 i,dat;
@@ -73,7 +73,7 @@ static  u8 DHT11_Read_Byte(void)
 //从DHT11读取一次数据
 //temp:温度值(范围:0~50°)
 //humi:湿度值(范围:20%~90%)
-//返回值：0,正常;1,读取失败
+//返回值:0,正常;1,读取失败
 u8 DHT11_Read_Data(void)    
 {        
  	u8 buf[5];
