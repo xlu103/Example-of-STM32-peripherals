@@ -3,16 +3,16 @@
 
 #include "sys.h"   
 
-//IO·½ÏòÉèÖÃ
+//IOæ–¹å‘è®¾ç½®
 #define DHT11_IO_IN()  {GPIOA->CRH&=0XFFFF0FFF;GPIOA->CRH|=8<<12;}
 #define DHT11_IO_OUT() {GPIOA->CRH&=0XFFFF0FFF;GPIOA->CRH|=3<<12;}
 
-////IO²Ù×÷º¯Êý											   
-#define	DHT11_DQ_OUT PAout(11) //Êý¾Ý¶Ë¿Ú	PA11 
-#define	DHT11_DQ_IN  PAin(11)  //Êý¾Ý¶Ë¿Ú	PA11
+////IOæ“ä½œå‡½æ•°											   
+#define	DHT11_DQ_OUT PAout(11) //æ•°æ®ç«¯å£	PA11 
+#define	DHT11_DQ_IN  PAin(11)  //æ•°æ®ç«¯å£	PA11
 
-u8 DHT11_Init(void);//³õÊ¼»¯DHT11
-u8 DHT11_Read_Data(void);//¶ÁÈ¡ÎÂÊª¶È
+u8 DHT11_Init(void);//åˆå§‹åŒ–DHT11
+u8 DHT11_Read_Data(void);//è¯»å–æ¸©æ¹¿åº¦
 
 #endif
 

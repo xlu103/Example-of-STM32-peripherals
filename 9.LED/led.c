@@ -12,7 +12,7 @@ void LED_Init(void)
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;		 //IO口速度为50MHz
 	GPIO_Init(GPIOA, &GPIO_InitStructure);					 //根据设定参数初始化GPIOB.5
 	
-	NET_LED = 1;	//初始关闭
-	BEEP = 1;		//初始关闭
+ LED = 1;	//初始关闭
+ 
 }
 

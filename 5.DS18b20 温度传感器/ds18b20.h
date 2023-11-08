@@ -3,22 +3,22 @@
 #include "sys.h"   
 
 
-//IO·½ÏòÉèÖÃ
+//IOæ–¹å‘è®¾ç½®
 #define DS18B20_IO_IN()  {GPIOA->CRH&=0XFFFFFFF0;GPIOA->CRH|=8;}
 #define DS18B20_IO_OUT() {GPIOA->CRH&=0XFFFFFFF0;GPIOA->CRH|=3;}
 
-////IO²Ù×÷º¯Êı											   
-#define	DS18B20_DQ_OUT PAout(8) //Êı¾İ¶Ë¿Ú	PA0 
-#define	DS18B20_DQ_IN  PAin(8)  //Êı¾İ¶Ë¿Ú	PA0 
+////IOæ“ä½œå‡½æ•°											   
+#define	DS18B20_DQ_OUT PAout(8) //æ•°æ®ç«¯å£	PA0 
+#define	DS18B20_DQ_IN  PAin(8)  //æ•°æ®ç«¯å£	PA0 
    	
-u8 DS18B20_Init(void);//³õÊ¼»¯DS18B20
-short DS18B20_Get_Temp(void);//»ñÈ¡ÎÂ¶È
-void DS18B20_Start(void);//¿ªÊ¼ÎÂ¶È×ª»»
-void DS18B20_Write_Byte(u8 dat);//Ğ´ÈëÒ»¸ö×Ö½Ú
-u8 DS18B20_Read_Byte(void);//¶Á³öÒ»¸ö×Ö½Ú
-u8 DS18B20_Read_Bit(void);//¶Á³öÒ»¸öÎ»
-u8 DS18B20_Check(void);//¼ì²âÊÇ·ñ´æÔÚDS18B20
-void DS18B20_Rst(void);//¸´Î»DS18B20    
+u8 DS18B20_Init(void);//åˆå§‹åŒ–DS18B20
+short DS18B20_Get_Temp(void);//è·å–æ¸©åº¦
+void DS18B20_Start(void);//å¼€å§‹æ¸©åº¦è½¬æ¢
+void DS18B20_Write_Byte(u8 dat);//å†™å…¥ä¸€ä¸ªå­—èŠ‚
+u8 DS18B20_Read_Byte(void);//è¯»å‡ºä¸€ä¸ªå­—èŠ‚
+u8 DS18B20_Read_Bit(void);//è¯»å‡ºä¸€ä¸ªä½
+u8 DS18B20_Check(void);//æ£€æµ‹æ˜¯å¦å­˜åœ¨DS18B20
+void DS18B20_Rst(void);//å¤ä½DS18B20    
 #endif
 
 

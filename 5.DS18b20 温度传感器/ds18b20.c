@@ -19,7 +19,7 @@ void DS18B20_Rst(void)
 }
 
 //从DS18B20读取一个位
-//返回值：1/0
+//返回值:1/0
 //补充代码
 u8 DS18B20_Read_Bit(void)
 {
@@ -68,7 +68,7 @@ u8 DS18B20_Check(void)
 }
 
 //从DS18B20读取一个字节
-//返回值：读到的数据
+//返回值:读到的数据
 u8 DS18B20_Read_Byte(void)
 {
     u8 i, j, dat;
@@ -83,7 +83,7 @@ u8 DS18B20_Read_Byte(void)
     return dat;
 }
 //写一个字节到DS18B20
-//dat：要写入的字节
+//dat:要写入的字节
 void DS18B20_Write_Byte(u8 dat)
 {
     u8 j;//8次
@@ -143,8 +143,8 @@ u8 DS18B20_Init(void)
     return DS18B20_Check();
 }
 //从ds18b20得到温度值
-//精度：0.01C
-//返回值：温度值 （-550~1250）
+//精度:0.01C
+//返回值:温度值 (-550~1250)
 short DS18B20_Get_Temp(void)
 {
     u8 temp;

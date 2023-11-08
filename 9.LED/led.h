@@ -2,9 +2,9 @@
 #define __LED_H	 
 #include "sys.h"
 
-#define 	NET_LED		 PAout(5)	//ÍøÂçÖ¸Ê¾µÆ - PA5
-#define 	BEEP 		 PAout(6)	//·äÃùÆ÷±¨¾¯ - PA6
+#define 	 LED		 PAout(5)	 
+ 
 
-void LED_Init(void);//³õÊ¼»¯
+void LED_Init(void);//åˆå§‹åŒ–
 		 				    
 #endif
