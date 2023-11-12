@@ -1,4 +1,4 @@
-# STM32-
+# Example-of-STM32-peripherals
 
 STM32外设使用整理
 
