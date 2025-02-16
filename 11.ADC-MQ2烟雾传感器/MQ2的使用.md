@@ -13,6 +13,8 @@
 2. 在main函数中
 
 ```c
+// 定义全局变量
+u16 smog=0;
 Smog_Init();
 // 调用函数获取值
 smog=Smog_Trans_Concentration();
